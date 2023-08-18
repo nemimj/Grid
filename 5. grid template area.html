@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .grid {
+        display: grid;
+        grid-template-areas:
+          "header header header" "content content aside"
+          "footer footer footer";
+        text-align: center;
+        gap: 1rem;
+      }
+
+      .grid > * {
+        border: 2px solid;
+      }
+      .header {
+        grid-area: header;
+      }
+      .content {
+        grid-area: content;
+      }
+      .aside {
+        grid-area: aside;
+      }
+    </style>
+    <title>gird template area</title>
+  </head>
+  <body>
+    <div class="grid">
+      <header class="header">
+        <h1>Hello my website</h1>
+      </header>
+      <section class="content">
+        <h1>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, est!
+        </h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, ipsum
+          exercitationem? Quae saepe impedit repellat maiores numquam! Similique
+          eos animi tempora, sunt voluptate, autem modi aperiam minima ipsam,
+          odit consequuntur laboriosam cupiditate rem. Eius iusto nostrum nam
+          repellat consequuntur ad sed blanditiis eos aspernatur possimus labore
+          harum cumque, eaque reprehenderit?
+        </p>
+      </section>
+      <aside class="aside">
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+          iure vitae officia, ab saepe cupiditate a totam corrupti incidunt in?
+        </p>
+      </aside>
+      <footer class="footer">
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt tenetur
+          dolor quia debitis reiciendis impedit ea perferendis veritatis,
+          consequatur doloribus.
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
